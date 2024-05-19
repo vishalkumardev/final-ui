@@ -1,7 +1,8 @@
-import  moment from 'moment'
+import moment from "moment";
 
-const formateDate = (value:string) => {
-  return moment(value).format("DD-MM-YYYY");
+const formateDate = (value: string, format: string = "DD-MM-YYYY") => {
+  const date = moment(value).format(format);
+  return date;
 };
 
-export default formateDate;
+export { formateDate };

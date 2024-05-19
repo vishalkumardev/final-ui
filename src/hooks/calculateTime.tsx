@@ -1,4 +1,6 @@
-function calculateTime(birthDate: string) {
+import React from "react";
+
+const calculateTime = (birthDate: string) => {
   // Convert the birthdate string to a Date object
   const dob = new Date(birthDate);
 
@@ -18,6 +20,6 @@ function calculateTime(birthDate: string) {
   }
 
   return age + "ago";
-}
+};
 
-export default calculateTime;
+export { calculateTime };
